@@ -48,7 +48,10 @@ public class CommandLineInterface {
     }
 
     private void viewProducts() {
-        System.out.println("Available Products:");
+        System.out.println("""
+                
+                Available Products:
+                """);
         productManager.getAllProducts().forEach(System.out::println);
     }
 
