@@ -3,7 +3,7 @@ import java.math.BigDecimal;
 public class Product {
     private Long id;
     private String name;
-    private BigDecimal price;
+    private double price;
     private int quantity;
     private ProductType type;
 
@@ -11,7 +11,7 @@ public class Product {
         COMPUTER, SMARTPHONE, ELECTRONICS
     }
 
-    public Product(Long id, String name, BigDecimal price, int quantity, ProductType type) {
+    public Product(Long id, String name, double price, int quantity, ProductType type) {
         this.id = id;
         this.name = name;
         this.price = price;
@@ -43,11 +43,11 @@ public class Product {
         this.name = name;
     }
 
-    public BigDecimal getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(BigDecimal price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 

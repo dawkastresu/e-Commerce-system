@@ -6,7 +6,7 @@ public class Smartphone extends Product{
     private int batteryCapacity;
     private List<String> accessories;
 
-    public Smartphone(Long id, String name, BigDecimal price, int quantity, String color, int batteryCapacity) {
+    public Smartphone(Long id, String name, double price, int quantity, String color, int batteryCapacity) {
         super(id, name, price, quantity, ProductType.SMARTPHONE);
         this.color = color;
         this.batteryCapacity = batteryCapacity;
