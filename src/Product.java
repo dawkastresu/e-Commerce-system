@@ -65,7 +65,6 @@ public class Product {
                 "ID: " + id + "\n" +
                 "Name: " + name + '\n' +
                 "Price: " + price + "\n" +
-                "Quantity: " + quantity + "\n" +
-                "Type: " +  "\n";
+                "Quantity: " + quantity;
     }
 }

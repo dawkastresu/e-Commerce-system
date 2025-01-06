@@ -9,7 +9,7 @@ public class OrderProcessor {
         return CompletableFuture.runAsync(() -> {
             // Simulate order processing ????
             try {
-                Thread.sleep(2000);
+                Thread.sleep(2);
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
             }
@@ -20,7 +20,7 @@ public class OrderProcessor {
 
     private void generateInvoice(Order order) {
         System.out.println
-                ("----Invoice---------------------------------" + "\n" +
+                ("\n" + "----Invoice---------------------------------" + "\n" +
                 "Customer name: " + order.getCustomerName() + "\n" +
                 "Products: " + "\n" +
                 order.getProducts() +
