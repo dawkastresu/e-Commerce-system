@@ -4,7 +4,7 @@ public class Computer extends Product{
     private String processor;
     private int ramGB;
 
-    public Computer(Long id, String name, BigDecimal price, int quantity, String processor, int ramGB) {
+    public Computer(Long id, String name, double price, int quantity, String processor, int ramGB) {
         super(id, name, price, quantity, ProductType.COMPUTER);
         this.processor = processor;
         this.ramGB = ramGB;
