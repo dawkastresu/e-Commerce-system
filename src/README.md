@@ -47,6 +47,6 @@ The goal of this project is to create a complete online shop system in Java. The
 
 
 ## Authors
-- **Your Name** - [GitHub Profile](https://github.com/dawkastresu)
+- **Dawid Malczewski** - [GitHub Profile](https://github.com/dawkastresu)
 
 ---
