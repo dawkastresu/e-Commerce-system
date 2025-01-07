@@ -7,12 +7,7 @@ public class OrderProcessor {
 
     public CompletableFuture<Void> processOrder(Order order) {
         return CompletableFuture.runAsync(() -> {
-            // Simulate order processing ????
-            try {
-                Thread.sleep(2);
-            } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
-            }
+            // Simulate order processing
             orders.add(order);
             generateInvoice(order);
         });
@@ -26,9 +21,11 @@ public class OrderProcessor {
                 order.getProducts() +
                 "Time: " + order.getOrderTime() + "\n" +
                 "Total price: " + order.getTotalAmount());
+        //zapisz do pliku
     }
 
     public List<Order> getOrders() {
         return new ArrayList<>(orders);
     }
+
 }

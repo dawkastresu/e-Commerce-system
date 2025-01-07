@@ -13,7 +13,6 @@ public class ProductManager {
         products.removeIf(p -> id.equals(p.getId()));
     }
 
-    //??????????????
     public void updateProduct(Product updatedProduct) {
         for (int i = 0; i < products.size(); i++) {
             if (products.get(i).getId().equals(updatedProduct.getId())) {

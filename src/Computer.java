@@ -26,6 +26,7 @@ public class Computer extends Product{
         this.ramGB = ramGB;
     }
 
+    //dodac do interface command line, stworz nowy
     public void configureSpecs(String processor, int ramGB) {
         this.processor = processor;
         this.ramGB = ramGB;

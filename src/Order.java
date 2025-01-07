@@ -4,7 +4,7 @@ import java.util.List;
 public class Order {
     private Long id;
     private String customerName;
-    private List<Product> products;
+    private List<Product> products; //do pliku
     private double totalAmount;
     private LocalDateTime orderTime;
 

@@ -14,6 +14,7 @@ public class CommandLineInterface {
     }
 
     public void start() {
+        //wczytac produkty z pliku.csv
         while (true) {
             System.out.println("\n1. View Products");
             System.out.println("2. Add to Cart");
@@ -62,6 +63,7 @@ public class CommandLineInterface {
         Long id = scanner.nextLong();
         productManager.getProduct(id).
                 ifPresentOrElse(product -> {
+                    //dodac do pliku
                     cart.addProduct(product);
                     System.out.println("Product added to cart.");
                 },
@@ -90,4 +92,5 @@ public class CommandLineInterface {
             cart.clear();
         });
     }
+
 }

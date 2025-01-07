@@ -25,7 +25,6 @@ The goal of this project is to create a complete online shop system in Java. The
    git clone https://github.com/dawkastresu/e-Commerce-system.git
    ```
 2. Open the project in your IDE (e.g., IntelliJ IDEA).
-3. Build the project using Maven or Gradle.
 
 ## Usage
 1. Run the application.
