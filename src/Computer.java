@@ -35,6 +35,7 @@ public class Computer extends Product{
     public String toString() {
         return super.toString() + "\n" +
                 "Processor: " + processor + '\n' +
-                "Ram GB: " + ramGB;
+                "Ram GB: " + ramGB + "\n" +
+                "-----------------------" + "\n";
     }
 }
