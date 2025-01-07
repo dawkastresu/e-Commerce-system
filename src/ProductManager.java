@@ -13,7 +13,6 @@ public class ProductManager {
         products.removeIf(p -> id.equals(p.getId()));
     }
 
-
     //??????????????
     public void updateProduct(Product updatedProduct) {
         for (int i = 0; i < products.size(); i++) {
@@ -25,7 +24,7 @@ public class ProductManager {
     }
 
     public Optional<Product> getProduct(Long id) {
-        //alternative solution
+        //alternative
         //return products.stream().filter(p -> p.getId().equals(id)).findFirst();
         for (Product product : products){
             if (id.equals(product.getId())){

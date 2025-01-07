@@ -17,11 +17,6 @@ public class Cart {
         return new ArrayList<>(items);
     }
 
-// alternative
-//    public void getItems() {
-//        items.forEach(v -> System.out.println(v));
-//    }
-
     public double getTotalPrice() {
         double counter = 0.0;
         for (Product item : items) {
@@ -29,13 +24,6 @@ public class Cart {
         }
         return counter;
     }
-
-// alternative
-//    public BigDecimal getTotalPrice() {
-//        return items.stream()
-//                .map(Product::getPrice)
-//                .reduce(BigDecimal.ZERO, BigDecimal::add);
-//    }
 
     public void clear() {
         items.clear();

@@ -36,11 +36,15 @@ public class Smartphone extends Product{
         this.color = color;
     }
 
-    //Check list input
     public void configureOptions(String color, int batteryCapacity, List<String> accessories) {
         this.color = color;
         this.batteryCapacity = batteryCapacity;
         this.accessories = accessories;
+    }
+
+    public void configureOptions(String color, int batteryCapacity) {
+        this.color = color;
+        this.batteryCapacity = batteryCapacity;
     }
 
     @Override
