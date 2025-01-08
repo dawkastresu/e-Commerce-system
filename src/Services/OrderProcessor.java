@@ -1,9 +1,13 @@
+package Services;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class OrderProcessor {
+
     private List<Order> orders = new ArrayList<>();
+
 
     public CompletableFuture<Void> processOrder(Order order) {
         return CompletableFuture.runAsync(() -> {

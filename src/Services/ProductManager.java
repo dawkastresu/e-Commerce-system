@@ -1,9 +1,15 @@
+package Services;
+
+import Model.Product;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 public class ProductManager {
+
     private List<Product> products = new ArrayList<>();
+
 
     public void addProduct(Product product) {
         products.add(product);
@@ -36,4 +42,6 @@ public class ProductManager {
     public List<Product> getAllProducts() {
         return new ArrayList<>(products);
     }
+
+
 }

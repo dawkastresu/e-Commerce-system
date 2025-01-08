@@ -9,11 +9,11 @@ The goal of this project is to create a complete online shop system in Java. The
 
 ## Business Requirements
 
-### Product Types
-1. **Computer**
+### Model.Product Types
+1. **Model.Computer**
     - Feature: Allow customers to configure specifications (e.g., processor, RAM) before adding to the cart.
 
-2. **Smartphone**
+2. **Model.Smartphone**
     - Feature: Enable customers to choose color, battery capacity, and additional accessories during purchase.
 
 3. **Electronics (Default)**

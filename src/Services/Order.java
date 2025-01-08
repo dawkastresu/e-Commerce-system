@@ -1,12 +1,23 @@
+package Services;
+
+import Model.Product;
+
 import java.time.LocalDateTime;
 import java.util.List;
 
 public class Order {
+
     private Long id;
+
     private String customerName;
+
     private List<Product> products; //do pliku
+
     private double totalAmount;
+
     private LocalDateTime orderTime;
+
+
 
     public Order(Long id, String customerName, List<Product> products, double totalAmount) {
         this.id = id;
@@ -58,11 +69,11 @@ public class Order {
 
     @Override
     public String toString() {
-        return "Order: " +
-                "ID: " + id + "" + "\n" +
-                "Customer name: " + customerName + '\n' +
-                "Products: " + products + "\n" +
-                "Total amount: " + totalAmount + "\n" +
-                "Order time: " + orderTime;
+        return "Zamówienie: " +
+                "ID: " + id  + "\n" +
+                "Imie klienta: " + customerName + '\n' +
+                "Produkty: " + products + "\n" +
+                "Cena całkowita: " + totalAmount + "\n" +
+                "Czas złożenia zamówienia: " + orderTime;
     }
 }

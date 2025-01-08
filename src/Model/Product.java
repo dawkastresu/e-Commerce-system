@@ -1,10 +1,15 @@
-import java.math.BigDecimal;
+package Model;
 
 public class Product {
+
     private Long id;
+
     private String name;
+
     private double price;
+
     private int quantity;
+
     private ProductType type;
 
     public enum ProductType {
@@ -17,6 +22,9 @@ public class Product {
         this.price = price;
         this.quantity = quantity;
         this.type = type;
+    }
+
+    public Product() {
     }
 
     public Long getId() {
@@ -62,9 +70,9 @@ public class Product {
     @Override
     public String toString() {
         return
-                "ID: " + id + "\n" +
-                "Name: " + name + '\n' +
-                "Price: " + price + "\n" +
-                "Quantity: " + quantity;
+                "ID: " + id + ", " +
+                "Name: " + name + ", " +
+                "Price: " + price + ", " +
+                "Quantity: " + quantity + ", ";
     }
 }
